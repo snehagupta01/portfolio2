@@ -4,13 +4,51 @@ body{
     font-size: 30px;
 }
 
-/* Body Header */
+/* scroll-behaviour */
+html{
+    scroll-behavior: smooth;
+}
 
+/*responsiveness*/
+#ham-burger-icon{
+    display: none;
+}
+@media screen and (max-width:800px){
+    #ham-burger-icon{
+        display: block;
+        float:right;
+        color:white;
+        margin-right: 2rem;
+        font-size: 2rem;
+    }
+    header nav ul{
+        display: block;
+        text-align: center;
+    }
+    .nav-horizontal-list li{
+		display: block;
+        width:100%;
+	}
+    header nav{
+        position:absolute;
+        left:-50%;
+        width: 50%;
+        height:70%;
+        background-color: black;
+        z-index:100;
+        transition: 0.8s;
+        top:0;
+    }
+    header nav.active{
+		left: 0;
+	}
+}
+/* Body Header */
 #body-header{
     height: 65vh;
     opacity: 0.8;
     background-image: url(image/bg.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
     padding-top: 1.2rem;
@@ -416,7 +454,7 @@ button:focus {
 }
 
 .timeline-box:nth-child(2n+1)::after {
-    right: -11.8%;
+    right: -12.4%;
 }
 
 .timeline-box:nth-child(2n)::after {

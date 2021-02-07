@@ -7,20 +7,23 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     </head>
-    <body>
+    <body id="body">
         <header id="body-header">
-            <nav>
-                <ul class="horizontal-list text-center nav-menu">
+            <nav id="show-full-list">
+                <ul class="nav-horizontal-list horizontal-list text-center nav-menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#education">Education</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-
+            <div class="hamburger">
+                <i id="ham-burger-icon" class="fa fa-bars font-icons" aria-hidden="true"></i>
+            </div>
             <div id="name-social-container">
                 <div class="text-center">
                     <h1 id="my-name">
@@ -66,6 +69,23 @@
                 </div>
                 <p id="about-para"> 
                     About me :: baad m shi
+                    About me :: baad m shi
+                    About me :: baad m shi
+                    About me :: baad m shi
+                    About me :: baad m shi
+                    About me :: baad m shi
+                    About me :: baad m shi
+                    About me :: baad m shi
+                    About me :: baad m shi
+                    About me :: baad m shi
+                    About me :: baad m shi
+                    About me :: baad m shi
+                    About me :: baad m shi
+                    About me :: baad m shi
+                    About me :: baad m shi
+                    About me :: baad m shi
+                     About me :: baad m shi4 About me :: baad m shi
+                     About me :: baad m shi
                 </p>
                 
             </section>
@@ -77,52 +97,52 @@
                     <span> SKILLS </span>
                 </h1>
     
-                <div class="skills-display">
+                <div id="skills-container" class="skills-display">
 
                     <div class="skill-progress">
-                        <div class="eighty-percent mb-blue">
+                        <div class="eighty-percent mb-blue" data-bar-width="85">
                             <div class="skill-name">
                                 <span> JAVA </span>
                             </div>
                         </div>
                     </div>
                     <div class="skill-progress">
-                        <div class="eighty-five-percent mb-orange">
+                        <div class="eighty-five-percent mb-orange" data-bar-width="85">
                             <div class="skill-name">
                                 <span> HTML </span>
                             </div>
                         </div>
                     </div>
                     <div class="skill-progress">
-                        <div class="eighty-percent mb-red">
+                        <div class="eighty-percent mb-red" data-bar-width="80">
                             <div class="skill-name">
                                 <span> CSS </span>
                             </div>
                         </div>
                     </div>
                     <div class="skill-progress">
-                        <div class="fifty-percent mb-teal">
+                        <div class="fifty-percent mb-teal" data-bar-width="55">
                             <div class="skill-name">
                                 <span> Javascript </span>
                             </div>
                         </div>
                     </div>
                     <div class="skill-progress">
-                        <div class="fifty-percent mb-blue">
+                        <div class="fifty-percent mb-blue" data-bar-width="55">
                             <div class="skill-name">
                                 <span> Python </span>
                             </div>
                         </div>
                     </div>
                     <div class="skill-progress">
-                        <div class="eighty-percent mb-red">
+                        <div class="eighty-percent mb-red" data-bar-width="80">
                             <div class="skill-name">
                                 <span> Flask </span>
                             </div>
                         </div>
                     </div>
                     <div class="skill-progress">
-                        <div class="fifty-percent mb-teal">
+                        <div class="fifty-percent mb-teal" data-bar-width="55">
                             <div class="skill-name">
                                 <span> Django </span>
                             </div>
@@ -187,7 +207,7 @@
                     <div id="timeline-divider">
                         <div class="timeline-traveller">
                             <div>
-                                <i class="fas fa-car-side"></i>
+                                <i class="fas fa-car-side" style="font-size: 1.8rem;"></i>
                             </div>
                         </div>
                     </div>
@@ -197,12 +217,12 @@
             </section>
 
             </section>
-            <section id="portfolio">
+            <section id="projects">
                 <h1 class="section-heading mb75px">
                     <span>
                         <i class="fas fa-th-list"></i>
                     </span>
-                    <span> Portfolio </span>
+                    <span> Projects </span>
                 </h1>
     
                 <div id="portfolio-container">
@@ -353,5 +373,6 @@
             </section>
             
         </main>
+        <script src="main.js" type="text/Javascript"></script>
     </body>
 </html>
