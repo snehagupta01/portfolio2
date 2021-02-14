@@ -209,9 +209,11 @@ section:nth-child(2n + 1) {
     box-shadow: 1px 1px 5px 2px #989882;
 }
 
-.skill-name span {
+.skill-name {
     color: white;
-    font-size: 1rem;
+    font-size: 14px;
+    padding-top:5px;
+    font-weight: bold;
     margin-left: 10px;
     vertical-align: middle;
 }
@@ -234,8 +236,21 @@ section:nth-child(2n + 1) {
     background-color: red;
 }
 
+.mb-green{
+    background-color: green;
+}
 
+.mb-orchid{
+    background-color: palevioletred;
+}
 
+.mb-yellow{
+    background-color: peru;
+}
+
+.mb-purple{
+    background-color: purple;
+}
 /*Percentage Classes */
 
 .eighty-five-percent {
@@ -300,14 +315,14 @@ section:nth-child(2n + 1) {
     padding: 10px;
 }
 
-.portfolio-image-container:hover {
+/* .portfolio-image-container:hover {
     box-shadow: 0 0 20px #74ADC8;
 }
 
 .portfolio-image-container:hover .portfolio-details {
     background-color: #80808078;
     color: white;
-}
+} */
 
 /* Contact Form */
 
@@ -549,3 +564,28 @@ button:focus {
 .text-align-justify {
     text-align: justify;
 }
+
+.portfolio-image{
+    height: 200px;
+    width: 200px;
+}
+
+.portfolio-image-container{
+
+    height: 250px;
+}
+.portfolio-image-container:hover .portfolio-details{
+    font-size: 20px;
+    color: white;
+    background-color: #f0f;
+    box-shadow:
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px #f0f,   /* inner left magenta short */
+    inset -20px 0 80px #0ff,  /* inner right cyan short */
+    inset 20px 0 300px #f0f,  /* inner left magenta broad */
+    inset -20px 0 300px #0ff, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff; 
+}
+/* .proj-details:hover */
